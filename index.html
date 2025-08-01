@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Sliding Picture</title>
+  <style>
+    .slider {
+      width: 1400px;
+      height: 200px;
+      overflow: hidden;
+      margin: 20px auto;
+      border: 2px solid #333;
+    }
+
+    .slides {
+      display: flex;
+      width: 900px; /* 3 images * 300px each */
+      animation: slide 9s infinite;
+    }
+
+    .slides img {
+      width: 500px;
+      height: 200px;
+    }
+
+    @keyframes slide {
+      0%   { transform: translateX(0); }
+      33%  { transform: translateX(-300px); }
+      66%  { transform: translateX(-600px); }
+      100% { transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slider">
+    <div class="slides">
+      <img src="https://github.com/som232000/slideing/blob/4d2084c49f0d2bcfd3e0341daa2e2c6bbfb99a97/puddy.jpg" alt="Slide 1">
+      <img src="https://github.com/som232000/slideing/blob/4d2084c49f0d2bcfd3e0341daa2e2c6bbfb99a97/puddy.jpg" alt="Slide 2">
+	   <img src="https://github.com/som232000/slideing/blob/4d2084c49f0d2bcfd3e0341daa2e2c6bbfb99a97/puddy.jpg" alt="Slide 3">
+	    <img src="C:\Users\INDIA\Desktop\INDEX/puddy.jpg" alt="Slide 4">
+   
+	  
+  </div>
+
+</body>
+</html>
